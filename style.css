@@ -92,19 +92,27 @@ a{
     }
 }
 
-@keyframes bodyContainer {
+/* @keyframes bodyContainer {
     from {
         opacity: 0;
+        transform: translateY(-100%);
     }
     to {
         opacity: 1;
-        top: 0;
     }
     
+} */
+
+.bodyContainer:hover .macImage{
+        background-color: blueviolet;
+                margin-top: 2rem;
+
+
+
+    /* background-color: white; */
 }
 
-.bodyContainer{
-    margin-top: 2rem;
-    animation-name: bodyContainer;
-    animation-duration: 1s;
+.macImage{
+
+    transition: background-color 1s ease, margin-top 1s ease;
 }
